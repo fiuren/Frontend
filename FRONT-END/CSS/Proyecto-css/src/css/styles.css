@@ -1,0 +1,90 @@
+h1{ /*ahora todos los "h" de la página van a tener los detalles que especificamos dentro*/
+    color: blueviolet;
+    font-size: 48px;
+    
+}
+section{
+    border: 10px solid blueviolet;
+    padding: 20px;
+}
+/*Especificamos cada item que tenemos en la lista de los selectores*/
+.item-list{
+    color: violet;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.item-list.small{
+    font-size: 10px;
+}
+.item-list.big{
+    font-size: 20px;
+}
+.item-list.red{
+    color:red;
+    font-size: 20px;
+}
+#intro{
+    background-image:url("../img/descarga.jpeg");
+    background-repeat: no-repeat; /*esto sirve para que no se repita la imagen*/
+    background-position: center;/*esto sirve para centrar la imagen*/
+    background-size: 50%;
+}
+#ocio{
+    background-color: aqua;
+}
+/*usamos las relaciones pafre-hijo para modificar textos dentro de un mismo lugar*/
+#intro:first-child{
+    color: brown;
+    text-shadow:darkgreen;
+    text-shadow: -5;/*esto sirve para difuminar mas o menos la letra*/
+}
+table{
+    border: blueviolet 2px solid;
+}
+body{
+    padding: 20px;
+}
+a:visited{
+    color: seagreen
+}
+a:hover{
+    color: royalblue;
+}
+h1:hover{
+    color: silver;
+}
+/* cambiamos de color los impares*/
+tr:nth-child(odd){
+    background: teal;
+}
+/* cambiamos de color los pares*/
+tr:nth-child(even){
+    background: tomato;
+}
+/* cambiamos de color el principio de la tabla*/
+tr:first-child{
+background-color:yellow;
+}
+/* cambiamos de color el final de la tabla*/
+tr:last-child{
+    background-color: blueviolet;
+}
+/*espaciado entre valores de la tabla*/
+td:not(.classtd){
+    border:8px solid white
+}
+p::first-letter{
+    font-size: 300%;
+    color: turquoise;
+    font-size: 18px;
+    transition: 2s;
+}
+/*al seleccionar un texto nos lo remarca en otro color*/
+p::selection{
+    background-color: royalblue;
+    color: red;
+}
+/* Te agranda un texto en grande al final del párrafo*/
+p::after{
+    content:'PULSA PARA ver mas' ;
+    font-size: 200%;
+}

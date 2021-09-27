@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Formulario</title>
+</head>
+
+<body style="background-color: cyan;">
+    <h1>RELLENA EL SIGUIENTE FORMULARIO</h1>
+    <!--VAMOS A CREAR UN FORMULARIO,SE ESCRIBE PONINEDO "form"-->
+    <form action="formulario.php" method="POST" target="iframe" style="background-color:cyan;">
+        <fieldset>
+            <!--Sirve para introducir un campo de datos rodeado de una cuadrado-->
+            <legend>Datos Personales</legend>
+            <!--Etiqueta de texto-->
+            <ul>
+                <li>
+                    <label>
+                        Nombre y Apellidos:
+                        <!--introducimos las variables que vamos a necesitar para el campo-->
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre" autofocus>
+                        <!--el placeholder nos pone un texto en el campo que se va a rellenar-->
+                    </label>
+                    <!--IMPORTANTE! el "name" y el "id" siempre tienen que tener el mismo nombre-->
+                </li>
+                <br>
+                <!--es un salto de linea-->
+                <li>
+                    <label>
+                        Correo Electrónico:
+                        <input type="text" name="email" id="email" placeholder="Escribe aquí tu email" required>
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <label>
+                        Teléfono:
+                        <input type="" name="number" id="number" placeholder="Numbero de telefono"maxlength="9" required>
+                        <!--"required" No deja enviar porque-no se han completado los campos-->
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <label>
+                        Nacionalidad:
+                        <input type="text" name="nacionalidad" id="nacionalidad" required>
+                        <!--"required" No deja enviar porque-no se han completado los campos-->
+                    </label>
+                </li>
+                 <br>
+                <li>
+                    <legend>HORARIO DE JORNADA DE TRABAJO</legend>
+                    <select name="trabajo" id="trabajo">
+                        <option selected disabled value>Elige...</option>
+                        <option value="INTERNA">INTERNA</option>
+                        <option value="JORDANA DE 8 HORAS">JORDANA DE 8 HORAS</option>
+                        <option value="MEDIA JORNADA">MEDIA JORNADA</option>
+                    </select>
+                </li>
+                    <!--etiqueta "accept" indica el archivo que va a aceptar"-->
+                    <br>
+                <li>
+                    Donde prefiere Trabajar?
+                    <select name="lugar" id="lugar">
+                        <option selected disabled value>Elige...</option>
+                        <option value="Vigo ciudad">Vigo ciudad</option>
+                        <option value="Vigo alrededores">Vigo alrededores</option>
+                        <option value="Teletrabajo">Teletrabajo</option>
+                    </select>
+                    <br>
+                    <br>
+                <li>
+                    <label>
+                        Foto Reciente:
+                        <input type="file" name="foto" id="foto" placeholder accept="image/jpg,image/png">
+                    <label>
+                    </li>
+                <br>
+                <li>
+                    <label>
+                        Curriculum Vitae:
+                        <input type="file" name="cv" id="cv" placeholder accept="pdf">
+                    </label>
+                </li>
+                <li>
+                    <label>
+                        Experiencia laboral Brevemente:
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="50"></textarea>
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <label>
+                        Datos relevantes sobre lo que buscas y ofreces en esta oferta de trabajo:
+                        <input type="text" name="info" id="info" placeholder="Escriba aqui" maxlength="30" required>
+                    </label>
+                </li>
+            </ul>
+        </fieldset>
+        <!--Ponemos los botones de enviar y reset-->
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

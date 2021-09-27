@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+    <a href="inicio.html">Volver Inicio</a>
+    <!--VAMOS A CREAMOS EL FORMULARIO-->
+    <form action="formulario.php" method="POST" target="iframe">
+        <fieldset>
+            <!--Sirve para introducir un campo de datos rodeado de una cuadrado-->
+            <legend>Datos Personales</legend>
+            <hr>
+            <ul>
+                <li>
+                    <label>
+                        Nombre y Apellidos:
+                        <!--introducimos las variables que vamos a necesitar para el campo-->
+                        <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre" autofocus>
+                        <!--el placeholder nos pone un texto en el campo que se va a rellenar-->
+                    </label>
+                </li>
+                <br><!-- br es un salto de linea-->
+                <li>
+                    <label>
+                        email:
+                        <input type="text" name="email" id="email" placeholder="Escribe aquí tu email" required>
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <label>
+                        Contraseña:
+                        <input type="password" name="password" id="password" placeholder="Escribe una contraseña"
+                            required>
+                        <!--"required" No deja enviar porque-no se han completado los campos-->
+                    </label>
+                </li>
+                <br>
+                <li>
+                    <label>
+                        fecha de nacimiento:
+                        <input type="date" name="date" id="date" placeholder="Fecha de nacimiento">
+                    </label>
+                </li>
+                <br>
+            </ul>
+            <hr>
+        </fieldset>
+        <!--Hacemos un campo donde el usuario elige una opción-->
+        <legend>Lugares para comer</legend>
+        <select name="frecuencia" id="frecuenca">
+            <!--Para que salgao un desplegable usamos el comando OPTION y rellenamos los parámetros-->
+            <option selected disabled value>Elige...</option>
+            <option value="Bar">Bar</option>
+            <option value="Restaurante">Restaurante</option>
+            <option value="otros">Otros</option>
+        </select>
+        <legend>De Donde Eres?</legend>
+        <select name="Provincia">
+                <option value="acoruna">A Coruña</option>
+                <option value="lugo">Lugo</option>
+                <option value="ourense">Ourense</option>
+                <option value="pontevedra">Pontevedra</option>
+        </select>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>

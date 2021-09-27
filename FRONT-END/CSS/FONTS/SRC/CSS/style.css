@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&display=swap');
+
+@font-face{
+    font-family: "fontawesome-webfont"; src:url('../fonts/fontawesome-webfont.woff')
+}
+h1{
+  transition: 2s; color: brown;font-family: Georgia, 'Times New Roman', Times, serif;text-align: center;  border: steelblue dotted 5px;
+}
+h1:hover{transition: 2s; color: brown; font-size: 100px;}
+h2{
+    transition: 2s; color: chocolate; font-family: monospace; text-align: center; border: chocolate solid 5px;
+}
+table{
+    border: 4px solid yellowgreen;
+    padding: 4px;
+}
+body{
+    padding: 30px;
+}
+tr:first-child{/*modifica la primera fila de la tabla*/
+background-color: yellow;
+}
+tr:last-child{/*modifica la última fila de la tabla*/
+background-color: yellow;
+}
+td:nth-child(odd){/*cambia de colores los elementos pares*/
+    background-color: turquoise;
+}
+td:nth-child(even){ /*cambia de color los elementos impares*/
+    background-color: rgb(212, 59, 13);
+}
+td:not(table){ /* espaciado entre elementos internos de la tabla*/
+    border: 4px solid white
+}
+p::first-letter{
+    size: 10px; color: sienna;
+}
+tr:hover{
+    transition: 2s; color: chocolate; font-family: monospace; background-color: yellow;
+}
+p{ /*escogemos un tipo de fuente para los parrafos en este caso*/
+    font-family:  'Amatic SC';
+}

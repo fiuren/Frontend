@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <header>
+        <hi>Multimedia y Formularios</hi>
+        <nav>
+            <ul>
+                <li>
+                    <a href="/Formularios y multimedia/">Home</a>
+                </li>
+                <li>
+                    <a href="imagenes.html">Imagenes</a>
+                </li>
+                <li>
+                    <a href="video.html">Video</a>
+                </li>
+                <li>
+                    <a href="audio.html">Audio</a>
+                </li>
+                <li>
+                    <a href="formularios.html">Formularios</a>
+                </li>
+
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--VAMOS A CREAR UN FORMULARIO,SE ESCRIBE PONINEDO "form"-->
+        <form action="formulario.php" method="POST" target="iframe">
+            <fieldset>
+                <!--Sirve para introducir un campo de datos rodeado de una cuadrado-->
+                <legend>Datos Personales</legend>
+                <!--Etiqueta de texto-->
+                <ul>
+                    <li>
+                        <label>
+                            Nombre:
+                            <!--introducimos las variables que vamos a necesitar para el campo-->
+                            <input type="text" name="nombre" id="nombre" placeholder="Escribe aquí tu nombre" autofocus>
+                            <!--el placeholder nos pone un texto en el campo que se va a rellenar-->
+                        </label>
+                        <!--IMPORTANTE! el "name" y el "id" siempre tienen que tener el mismo nombre-->
+                    </li>
+                    <br><!-- br es un salto de linea-->
+                    <li>
+                        <label>
+                            email:
+                            <input type="text" name="email" id="email" placeholder="Escribe aquí tu email" required>
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            password:
+                            <input type="password" name="password" id="password" placeholder="Escribe una contraseña"
+                                required>
+                            <!--"required" No deja enviar porque-no se han completado los campos-->
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            fecha de nacimiento:
+                            <input type="date" name="date" id="date" placeholder="Fecha de nacimiento">
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            Foto:
+                            <input type="file" name="foto" id="foto" placeholder accept="image/jpg,image/png">
+                            <!--etiqueta "accept" indica el archivo que va a aceptar"-->
+                            <br>
+                            Video:
+                            <input type="file" name="video" id="video" placeholder accept="video/mp4">
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            Volumen de tu televisión normalmente:
+                            <input type="number" name="nota" id="nota" step="5" min="0" max="100">
+                            <input type="range" name="nota" id="nota" step="5" min="0" max="100">
+                        </label>
+                    </li>
+                    <br>
+                    <label>
+                        comentario:
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" maxlength="50"></textarea>
+                    </label>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <!--Hacemos un campo donde el usuario elige una opción-->
+                <legend>Suscripción Revista</legend>
+                <select name="frecuencia" id="frecuenca">
+                    <!--Para que salgao un desplegable usamos el comando OPTION y rellenamos los parámetros-->
+                    <option selected disabled value>Elige...</option>
+                    <option value="Semanal">Semanal</option>
+                    <option value="Quincenal">Quincenal</option>
+                    <option value="Mensual">Mensual</option>
+                </select>
+                <select name="Provincia">
+                    <optgroup label="Norte">
+                        <option value="acoruna">A Coruña</option>
+                        <option value="lugo">Lugo</option>
+                    </optgroup>
+                    <optgroup label="Sur">
+                        <option value="ourense">Ourense</option>
+                        <option value="pontevedra">Pontevedra</option>
+                    </optgroup>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend> Estudios e Intereses</legend>
+                <h3> Estudios</h3>
+                <ul>
+                    <li>
+                        <label>
+                            E.S.O
+                            <input type="radio" name="estudios" id="estudios" value="eso">
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            F.P
+                            <input type="radio" name="estudios" id="estudios" value="fp">
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            Unisversitarios
+                            <input type="radio" name="estudios" id="estudios" value="uni">
+                        </label>
+                    </li>
+                </ul>
+                <br>
+                <ul>
+                    <h3>Intereses</h3>
+                    <li>
+                        <label>
+                            Cine
+                            <input type="checkbox" name="cine">
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            Deporte
+                            <input type="checkbox" name="deporte">
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            Viajes
+                            <input type="checkbox" name="viaje">
+                        </label>
+                    </li>
+                    <br>
+                    <li>
+                        <label>
+                            Música
+                            <input type="checkbox" name="musica">
+                        </label>
+                    </li>
+                </ul>
+            </fieldset>
+            <!--Ponemos los botones de enviar y reset-->
+            <input type="submit">
+            <input type="reset">
+        </form>
+    </main>
+    <footer>
+
+        <iframe name="iframe" id="iframe" src="https://elpais.com" frameborder="0" width="100"></iframe>
+
+    </footer>
+</body>

@@ -1,0 +1,56 @@
+
+body{
+    height: 2000px;
+    background-color:darkkhaki;
+    margin: 0px;
+
+}
+section{
+    border:4px rgb(22, 218, 15) solid;
+    padding: 60px;
+    margin: 10px 20px 15px 20px;
+    width: 70%;
+    margin-left: 15%;
+    background-color: darkslateblue;
+    background-image: url('../../IMG/andalucia.jpg'); background-size: contain;
+}
+#caja-2{ /*colocamos el circulo pequeño que tenemos en la pantalla*/
+    width: 50px; height: 50px;
+    border: 1px solid red;
+    float: left;
+    margin: 15px;
+    border-radius: 80px;
+    background-image: url('../../IMG/andalucia.jpg'); background-size: contain;
+    position:absolute ; /*indica la position fija donde va a estar el elemento*/
+    z-index: 1; /*nos fija el elemento*/
+    top: 5px;/*colocanmos el elemento en la parte superior*/
+    right: 5px;/*colocamos el elemento en la esquina superior derecha*/
+
+}
+#caja-3{
+    font-size: 40px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.2); /*rgba: los 3 primeros numeros son el color y el utlimo numero es la opacidad*/
+    text-shadow: 1px 1px 2px black; /*1er valor indica el desplazamiento el color al final*/  
+}
+#caja-5{
+    max-width: 500px;
+    max-height: 700px;
+    border: 1px solid green;
+    overflow: auto;
+}
+li{
+    display: inline-block;
+    background-color: rgb(212, 109, 25);
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer; /*Al pasar el raton por el elemnto cambia el puntero del ratón*/
+}
+nav{
+    position:fixed
+}
+header{
+    height: 80px;
+    background-color: teal;
+}

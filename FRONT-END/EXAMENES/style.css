@@ -1,0 +1,15 @@
+body{
+    text-align: center;
+    background-color: gray;
+    background-image: url('EXAMENES/1114462.png'); background-size: contain; /*introducimos una imagen de fondo*/
+}/*ponemos el fondo del body de color*/
+nav{
+    padding: 12px; /*ancho del cuadro*/
+    position:absolute;
+    border: 3px solid red;
+    background-color:teal ;
+}/*damos parámetros al navegador, posicion fija */
+header{
+        height: 80px;
+        background-color: teal;   
+}

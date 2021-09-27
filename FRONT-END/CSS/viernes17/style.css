@@ -1,0 +1,75 @@
+section{
+    background-color: plum;
+    padding: 80px;
+}
+h1:hover{
+    transition: 4s;
+    transform: rotate(360deg);
+}
+.caja div{
+    padding: 100px;
+    display:inline-block;
+    position: relative;
+    border: 1px pink solid;
+}
+.caja{
+    border: 1px red solid;
+    box-shadow: 0 0 100px red; /* difuminado del fondo de la caja*/
+}
+#caja2{
+    border: 2px black solid;
+    box-shadow: 0 0 100px steelblue;
+    position: absolute;
+    transform: scale(1.6); /*podemos tambien darle valores por separado en los tres ejes x.y,z con scaleX.scaleY,scaleZ*/
+}
+#caja3{
+    border: 1px black solid ;
+    box-shadow: 0 0 100px green;
+    position: absolute; /*nos permite mover un div o elemento por la pantalla usando el comando de left, top etc..*/
+    left: 60%;
+    top: 15px;
+    transform: rotate(-50%); /*mueve el elementeo un 50% de su posicion habitual*/
+    z-index: 1;
+}
+#caja4{
+    background-color: powderblue;
+    border: 1px purple solid;
+    transform:rotate(45deg); /*rota el elemento los grados que se indiquen dentro del paréntesis*/
+
+}
+#caja5{
+    background-color: gold;
+    border: 2px steelblue solid;
+    transform: skew(24deg,35deg); /* este elemento hace que la figura se vaya aplanando, pasando de un circulo a un ovale, despues a una linea y vuelta. */
+    opacity: 0.5;  
+}
+#caja5:hover{
+    transition: 2s;
+    transform: rotate(50deg);
+}
+#caja6{
+    background-color: lawngreen;
+    animation: 2.3s ease both; /* le ponemos una animacion para que aparezca el elemento*/
+}
+#caja6:hover{
+    animation-name: slide;
+}
+/*TRANSICIONES CON KEYFRAMES, podemos ir marcando los rangos y movimientos*/
+@keyframes slide{
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    10% {
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    40% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%);
+        opacity: 1;
+    }
+}

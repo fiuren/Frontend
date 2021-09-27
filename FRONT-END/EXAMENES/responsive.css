@@ -1,0 +1,32 @@
+header{
+    height: 80px;
+    background-color: teal;
+}
+body{
+    background-color: olive;
+    margin: 0px;
+    height: 2000px;
+}
+li{
+    display: inline-block;
+    background-color:saddlebrown;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+    cursor: pointer; /*Al pasar el raton por el elemnto cambia el puntero del ratón*/
+}
+section{
+    border:4px rgb(22, 218, 15) solid;
+    padding: 60px;
+    margin: 10px 20px 15px 20px;
+    width: 60%; /*Dándole estos valor de width y margin left hacemos que la pagina sea responsive,
+    ya que siempre va a mantener los márgenes que le estamos dando de ancho y de margen con el borde izquierdo en este caso*/
+    margin-left: 15%;
+    background-color: darkslateblue;
+    background-image: url('../../IMG/andalucia.jpg'); background-size: contain;
+}
+.boton{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}

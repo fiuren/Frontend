@@ -1,0 +1,94 @@
+header{
+    background-color: white;
+}
+li{ /*le damos las caracteristicas a los elemntos de la lista del header*/
+    color: gray;
+    padding: 10px;
+    text-align:center;    
+    font-size: 15px;
+    display: inline-block;
+    cursor: pointer;
+    width: 14%;
+}
+body{
+    height: 2000px;
+    background-color:white;
+    margin: 0px;
+}
+.seccion1{/*introducimos los elementos del header con su imagen*/
+    margin-left: 0%;
+    width: 100%;
+    text-align: center;
+    border:1px rgb(180, 175, 175) solid;
+    position: absolute;
+    background-image: url('SRC/IMG/header-image.jpg'); background-size: cover;
+}
+.seccion2{/*modificamos el segundo header con otra imagen y sus caracteristicas*/
+    margin-left: 15%;
+    width: 70%;
+    text-align: center;
+    background-image: url('SRC/IMG/mountain1.png'); background-size: cover;
+}
+H2{
+    text-align: center;
+}
+.footer-div{
+    text-align: center;
+}
+footer{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    height: 70px;
+}
+.pie ul li{/*modificamos los elementos de dentro de la lista del final de la pagina*/
+    margin-top: 10px;
+    background-color: steelblue;
+    color: white;
+}
+footer li{/*modificamos los li del final de la pagina*/
+    padding-top: 40px;
+    display: inline-block;
+    height: 50px;
+    color: white;
+}
+h3{
+    color: teal;
+}
+footer p {/* damos las caracteristicas al pie de la pagina*/
+    color: white;
+    text-align: center;
+    height: 70px;
+    background-color: steelblue;
+    padding-top: 50px;
+}
+.logo{
+    animation: 1.8s ease both; /*indicamos el temporizador para que aparezca la animación*/
+    animation-name: slide;
+}
+.logo2{
+    animation: 2.1s ease both;
+    animation-name: slide;
+}
+.logo3{
+    animation: 2.4s ease both;
+    animation-name: slide;
+}
+@keyframes slide{
+    0% {
+        transform: translateX(0%);
+        opacity: 0;
+    }
+    10% {
+        transform: rotate(45deg);
+        opacity: 0;
+    }
+    40% {
+        transform: translateY(60%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
