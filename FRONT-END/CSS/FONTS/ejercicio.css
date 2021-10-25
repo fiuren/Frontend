@@ -1,4 +1,4 @@
-header{
+    header{
     background-color: white;
 }
 li{ /*le damos las caracteristicas a los elemntos de la lista del header*/
@@ -6,7 +6,7 @@ li{ /*le damos las caracteristicas a los elemntos de la lista del header*/
     padding: 10px;
     text-align:center;    
     font-size: 15px;
-    display: inline-block;
+    display: inline-block; /* dispone los elementos en línea*/
     cursor: pointer;
     width: 14%;
 }
